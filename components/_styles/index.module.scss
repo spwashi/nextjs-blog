@@ -1,0 +1,46 @@
+.mainContainer {
+  main > article {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    > section, details {
+      width: auto;
+    }
+  }
+
+  article section > details {
+    @media screen and (min-width: 900px) {
+      padding-left: 2rem;
+      ::marker{
+        white-space: nowrap;
+      }
+      > summary ~ * {
+        padding-left: 2rem;
+      }
+    }
+
+    summary {
+      border-bottom: thin solid #eee;
+    }
+
+    h3 {
+      margin: .5rem 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  summary {
+    cursor: pointer;
+    padding: .5rem 0;
+    h1, h2, h3, h4, h5, h6 {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Spw",
+  "img": {
+    "src": "/assets/projects/spw/spw-logo.png"
+  },
+  "repo_url": "https://github.com/spwashi/spw-js",
+  "demo_url": "https://frontend.spw.spwashi.com/?demo",
+  "descriptions" : {
+    "noun_phrase": "a language for graph traversal"
+  }
+}

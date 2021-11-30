@@ -1,0 +1,42 @@
+@import "components/_styles/tile";
+
+.postPreviewLinkWrapper {
+  display: inline-block;
+  flex: 0 1;
+  margin: 1rem;
+}
+
+.postPreview {
+  .tile {
+    @extend %imageTile;
+    @extend %inlineImageTile;
+  }
+
+  pointer-events: none;
+  text-align: center;
+
+  > .title {
+    margin: .5rem 0;
+    pointer-events: auto;
+  }
+
+
+  > .title,
+  time {
+    display: inline-block;
+    width: 100%;
+  }
+
+  p {
+    display: none;
+  }
+
+  &:hover > .imageWrapper {
+    box-shadow: 10px 10px 20px #ddd;
+  }
+
+  .body > * {
+    text-decoration-line: none;
+    color: black;
+  }
+}

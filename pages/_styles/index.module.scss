@@ -1,0 +1,52 @@
+.indexPage {
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+    margin: 0 1rem 2rem;
+    border-bottom: thin solid #ccc;
+  }
+
+  h3 {
+    margin: 1rem 2rem;
+    padding: .5rem 0;
+  }
+
+  :global(#work-container) {
+    padding: 1rem;
+  }
+}
+
+.hero {
+  margin: 1rem;
+  text-align: center;
+}
+
+
+
+@import "components/_styles/tile";
+
+
+.projectList {
+  @extend %imageTileList;
+}
+
+.workContainer {
+  display: none;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  //display: flex;
+  flex-flow: row wrap;
+
+  > details {
+    display: inline-block;
+    flex: 1 0 100%;
+
+    summary {
+      border-bottom: thin solid #ccc;
+    }
+  }
+}

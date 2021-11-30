@@ -1,0 +1,56 @@
+.mainNavigation {
+  overflow-x: scroll;
+  margin: 1rem;
+  border-bottom: thin solid #ccc;
+}
+
+$a: transparent;
+
+.navList {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+
+  @media screen and (max-width: 800px) {
+    justify-content: flex-start;
+
+  }
+
+  li {
+    padding: 0;
+    margin: 0 .5rem;
+    display: inline-flex;
+    white-space: nowrap;
+
+    button:visited {
+      color: #551a8b
+    }
+
+    a, button {
+      border: thin solid #ccc;
+      padding: 1rem;
+      background: $a;
+      font: inherit;
+
+      &.important {
+        border: thin solid green;
+      }
+
+      &.active {
+        background: rgba(pink, .3);
+      }
+
+      &:hover, &:focus {
+        box-shadow: 10px 10px rgba(50, 50, 50, .2);
+      }
+
+      text-decoration: none;
+
+      &[aria-disabled="true"] {
+        pointer-events: none;
+      }
+    }
+  }
+}

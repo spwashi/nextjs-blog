@@ -1,0 +1,12 @@
+{
+  "title": "D3",
+  "img": {
+    "src": "/assets/projects/spw/spw-logo.png"
+  },
+  "descriptions": {
+    "noun_phrase": "a library for creating visualizations with D3 and React"
+  },
+  "repo_url": "https://github.com/spwashi/react-d3",
+  "motivation": "I used D3 for a job before and thought the physics simulation would be a good way to describe the runtime for a language I am writing.",
+  "demo_url": "https://d3.spwashi.com/?demo"
+}

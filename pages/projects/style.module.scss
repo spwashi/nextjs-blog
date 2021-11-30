@@ -1,0 +1,71 @@
+@import "components/_styles/tile";
+
+.skillsPage {
+  h5 { margin: 0;}
+
+  .skillsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+
+    @media screen and (min-width: 701px) {
+
+    }
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+
+    > li {
+      @extend %imageTile;
+      display: block;
+      padding: 0;
+      @media screen and (max-width: 700px) {
+        margin-bottom: 1rem;
+      }
+      @media screen and (min-width: 700px) {
+        flex: 1 0 50%;
+        margin-bottom: 1rem;
+        &:nth-child(even) {
+          margin-left: 1rem;
+        }
+      }
+
+      h5 {
+        padding: .5rem;
+        border-bottom: thin solid #555
+      }
+
+      dt, dl, dd {
+        display: inline;
+        margin: 0;
+      }
+
+      dd {
+        margin-left: 10px;
+        font-size: .75em;
+        opacity: .75;
+        font-weight: normal;
+
+        &:before {content: '('}
+
+        &:after {content: ')'}
+      }
+
+      ul {
+        padding: .5rem;
+        background: white;
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      li {
+        margin: .5rem .2rem;
+        font-family: 'JetBrains Mono', monospace;
+        padding: 2px 5px;
+        border-radius: 5px;
+        border: thin solid red;
+        display: inline;
+      }
+    }
+  }
+}
