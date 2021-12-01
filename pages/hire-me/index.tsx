@@ -40,7 +40,7 @@ const Index = ({}: Props) => {
                                             <li><a href="https://github.com/spwashi/hello-angular">Angular</a></li>
                                             <li><a href="https://github.com/spwashi/hello-vue">Vue JS</a></li>
                                             <li><a href="https://github.com/spwashi/hello-next">Next JS</a></li>
-                                            <li>React JS</li>
+                                            <li><a href="https://github.com/spwashi/hello-react">React JS</a></li>
                                         </ul>
                                     </li>
                                 </ul>
