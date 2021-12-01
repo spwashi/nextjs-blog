@@ -47,6 +47,8 @@ export function Navigation() {
                              {name: 'Home', pathname: '/'},
                              {name: 'Long-Term', pathname: '/projects'},
                              {name: 'Daily', pathname: '/daily'},
+                             {name: 'Job Search', pathname: '/hire-me'},
+                             {name: 'Comedy', pathname: '/comedy'},
                          ] as { pathname: string, name: string }[],
                          []);
 
