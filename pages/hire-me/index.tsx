@@ -2,8 +2,6 @@ import Main from '../../components/layout/Main'
 import Layout from '../../components/layout/Layout'
 import Head from 'next/head'
 import Header from '../../components/layout/Header';
-import {Spw} from '../../components/spw/spw';
-import Image from 'next/image'
 
 type Props = {}
 
@@ -33,6 +31,8 @@ const Index = ({}: Props) => {
                         <ul>
                             <li>
                                 <p>A <code>Hello World</code> in each major web application framework</p>
+                                <p>Monorepo of all of these here: <a
+                                    href="https://github.com/spwashi/hello-world">github.com/spwashi/hello-world</a></p>
                                 <ul>
                                     <li>
                                         <p>JavaScript</p>
@@ -41,6 +41,12 @@ const Index = ({}: Props) => {
                                             <li><a href="https://github.com/spwashi/hello-vue">Vue JS</a></li>
                                             <li><a href="https://github.com/spwashi/hello-next">Next JS</a></li>
                                             <li><a href="https://github.com/spwashi/hello-react">React JS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Python</p>
+                                        <ul>
+                                            <li><a href="https://github.com/spwashi/hello_django">Django</a></li>
                                         </ul>
                                     </li>
                                 </ul>
